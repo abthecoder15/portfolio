@@ -1,0 +1,15 @@
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Add styles for the link text */
+  color: #fff;
+  text-decoration: none;
+  /* Other styles as needed */
+}
