@@ -9,6 +9,7 @@ import mysqlLogo from './mysql.png';
 import JiraLogo from './jira.png';
 import GitLogo from './git-logo.png';
 import PygameLogo from './Pygame_logo.png';
+import FlaskLogo from './flask.png';
 
 
 const TechStack = () => {
@@ -22,6 +23,7 @@ const TechStack = () => {
     JiraLogo,
     GitLogo,
     PygameLogo,
+    FlaskLogo,
 
 
     // ... other logos representing your tech stack
