@@ -35,7 +35,7 @@ const Contact = () => {
           <p>LinkedIn: <a href="https://www.linkedin.com/in/andreia-byda">https://www.linkedin.com/in/andreia-byda</a></p>
         </div>
         <form className="contact-form" onSubmit={handleSubmit}>
-          <h3>Get in Touch</h3>
+          <h3 className="form-heading">Get in Touch</h3>
           <div className="form-group">
             <label htmlFor="name">Name:</label>
             <input
@@ -60,14 +60,12 @@ const Contact = () => {
           </div>
           <div className="form-group">
             <label htmlFor="message">Message:</label>
-            <br />
             <textarea
               id="message"
               name="message"
               value={formData.message}
               onChange={(e) => setFormData({ ...formData, message: e.target.value })}
               rows={6} // Adjust the number of rows as needed
-              cols={30} // Adjust the number of columns as needed
               required
             ></textarea>
           </div>

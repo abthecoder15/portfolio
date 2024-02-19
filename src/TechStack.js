@@ -8,8 +8,11 @@ import CSS from './css.png';
 import mysqlLogo from './mysql.png';
 import JiraLogo from './jira.png';
 import GitLogo from './git-logo.png';
+import GitHubLogo from './github.png';
 import PygameLogo from './Pygame_logo.png';
 import FlaskLogo from './flask.png';
+import KotlinLogo from './kotlin.png';
+import SwiftLogo from './Swift.png';
 
 
 const TechStack = () => {
@@ -22,8 +25,11 @@ const TechStack = () => {
     mysqlLogo,
     JiraLogo,
     GitLogo,
+    GitHubLogo,
     PygameLogo,
     FlaskLogo,
+    KotlinLogo,
+    SwiftLogo,
 
 
     // ... other logos representing your tech stack

@@ -1,17 +1,34 @@
-// About.js
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './About.css';
 
 const About = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const aboutSection = document.getElementById('about');
+      if (aboutSection) {
+        const aboutSectionTop = aboutSection.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+        setIsVisible(aboutSectionTop < windowHeight);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <section className="about-section" id="about">
+    <section className={`about-section ${isVisible ? 'visible' : ''}`} id="about">
       <div className="about-container">
         <h2>About</h2>
         <p>
-          Aspiring to be a Software Engineer, I'm fueled by more than coding—I'm fascinated by the thrill of untangling tech puzzles through deep research. Like cracking a complex puzzle, I revel in exploring technology's depths, uncovering innovative solutions, and piecing together its intricacies.
+          With a background in Law, I'm on a journey to become a Software Engineer, driven by more than just lines of code. What really excites me is the challenge of delving into tech problems, like unraveling a complex puzzle. I love diving deep into the world of technology, discovering new solutions, and connecting the dots to create something meaningful.
         </p>
         <p>
-          My passion extends beyond code to immersive research, driven by an insatiable curiosity that fuels my pursuit of knowledge. Armed with technical expertise and a researcher's mindset, I'm primed to craft impactful contributions, merging insights from varied domains into the tapestry of software development.
+          I have an insatiable curiosity that drives me to constantly seek knowledge. With a blend of technical skills and a curious mindset, I'm ready to make a difference in the world of software development by combining insights from various fields into innovative solutions.
         </p>
         {/* Add more details or sections as needed */}
       </div>

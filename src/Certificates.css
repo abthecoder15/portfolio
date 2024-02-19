@@ -1,0 +1,46 @@
+.certificate-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.certificate-card {
+  background-color: #D3D3D3;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  width: calc(50% - 20px); /* Adjust width as needed */
+  box-sizing: border-box;
+}
+
+.certificate-card h4 {
+  margin-top: 0;
+}
+
+.certificate-card p {
+  margin: 5px 0;
+}
+
+.square-button {
+  background-color: #e7c641;
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  margin: 5px;
+  width: 200px;
+}
+
+.square-button:hover {
+  background-color: #e0e0e0;
+}
+
+.square-button p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center; /* Center the buttons horizontally */
+}

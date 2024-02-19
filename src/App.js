@@ -6,6 +6,7 @@ import About from './About';
 import Projects from './Projects';
 import Contact from './Contacts';
 import TechStack from './TechStack';
+import Certificates from './Certificates';
 import './App.css';
 
 const App = () => {
@@ -19,6 +20,9 @@ const App = () => {
       <section id="about" className="section">
         {/* About content */}
         <About />
+      </section>
+      <section id="certificates" className="section">
+        <Certificates />
       </section>
       <section id="TechStack" className="section">
         <TechStack />
